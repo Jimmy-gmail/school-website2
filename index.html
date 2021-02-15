@@ -1,81 +1,232 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>
-        Tim
-    </title>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <ul class="menu">
-        <li class="links"><a href="#welcome">HOME</a> </li>
-        <li class="links"> <a href="#video">VIDEOS</a> </li>
-        <li class="links"><a href="#work">WORK</a> </li>
-        <li class="links"> <a href="#writing">WRITING</a></li>
-        <li class="links"><a href="#contact">CONTACT</a> </li>
-    </ul>
 
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
 
-
-
-    <section id="welcome">
-        <img src="Tim.jpg" class="profile">
-        <h1>Hallie wells
-
-        </h1>
-
-        <h2>60th anniverary</h2>
-    </section>
-    <section id="bio">
-        <h3>
-            <div class="line">
-                <p>
-                    inquire, inspire, and innovate
-                </p>
-            </div>
-        </h3>
-
-    </section>
-    <section id="video">
-        <h3>
-            VIDEO
-
-        </h3>
-        <div class="line"></div>
-        <iframe width="727" height="409" src="https://www.youtube.com/embed/u031dS4V_tM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-    <section id="work">
-        <h3> WORK </h3>
-        <div class="line">
-
-            <iframe width="800" height="500" src="https://www2.montgomeryschoolsmd.org/schools/halliewellsms/recognition/"></iframe>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Perter Parker</a>
         </div>
 
-    </section> <br>
-    <br>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#environment">Environment</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="page-header" id="travel">
+            <h2 class="text-capitalize">Campus life</h2>
+        </div>
+
+        <center>
+            <div class="travel_mainDiv">
+                <img class="img-responsive" src="thought-catalog-Nv-vx3kUR2A-unsplash-6480x3240.jpg">
+
+                <h4 class="text-capitalize"><kbd>School during quarintine</kbd></h4>
+
+                <hr>
+
+                <h5 class="text-success text-left text-capitalize"> Staying in your house taking lessons</h5>
+
+                <p class="text-muted text-left">Despite quarantine starting nearly a year ago, school has continued to keep students learning </p>
+            </div>
+        </center>
+
+        <br><br>
+
+
+
+        <div class="page-header" id="movies">
+            <h2 class="text-capitalize">School acheivements</h2>
+        </div>
+
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#avengers_endgame">
+            <span class="glyphicon glyphicon-film"></span> School gets on national news<i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="avengers_endgame" class="collapse">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="movie1.jpeg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </h5>
+                <p> Earlier in 2020, Mr dogget brought attention to the school by showcasing how this school embraces creativity</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="environment">
+            <h2 class="text-capitalize ">What's new</h2>
+        </div>
+
+        <ul class="list-group">
+
+            <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                <h4>Debate club</h4>
+                <img src="e1.jpeg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12"> School allows you to learn and reasearch how to debate </p>
+            </li>
+
+            <li class="list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                <h4>Tennis club</h4>
+                <img src="e3.jpeg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12"> When schools are expected to reopen, students will be able to join an afterschool tennis club</p>
+            </li>
+
+
+        </ul>
+
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="books">
+            <h2 class="text-capitalize ">Books</h2>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <h3>Bill Gates</h3>
+            <h4>
+                <mark class="header_entrepreneur">
+                    <i>
+                        <sup><i class="fa fa-quote-left"></i></sup>
+                        Reading is still the main way that I both learn new things and test my understanding.
+                        <sup><i class="fa fa-quote-right"></i></sup>
+                    </i>
+                </mark>
+            </h4>
+
+        </div>
+
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="text-capitalize ">List of staff</h2>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#First_Space_Encyclopaedia">
+            <img src="EpNzbtcXYAQnabm.jpg" class="img-responsive">
+            <hr>
+            <p class="text-primary">Mrs thomas</p>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="First_Space_Encyclopaedia">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">First Space Encyclopaedia</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="s1.jpg" class="img-responsive img_modal">
+                        <p class="p_modal">assistant principal<br>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#Man_on_the_Moon">
+            <img src="s2.jpg" class="img-responsive">
+            <hr>
+            <p class="text-primary">Mr cassel</p>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="Man_on_the_Moon">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Mr.Cassel </h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="EtZUharWYAIO7qY.jpg" class="img-responsive img_modal">
+                        <p class="p_modal">He is one of the wonderful teachers at HWMS <br>
+                            <a href="https://twitter.com/HWMSCounseling/status/1357365274593353729/photo/1"><b></b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#Space_Encyclopaedia">
+            <img src="s3.jpg" class="img-responsive">
+            <hr>
+            </hr>
+
+            <p> </p>
+        </div>
+        <div></div>
+    </div>
+    </div>
 
     <section id="contact">
-        <h3> CONTACT </h3>
-        <div class="line">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0" allowfullscreen=""></iframe>
 
+        <hr style="width: 100%;">
+        <img src="kid.jpeg" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+        <h3>Peter Parker</h3>
 
+        <div class="contact_1">
 
+            <a href="mailto:my@gmail.com?Subject=Hi">
+                <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
+            </a>
 
-
+            <a href="#">
+                <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;myinstagramid</h5>
+            </a>
         </div>
 
-        <iframe src="https://www.google.com/maps/place/Hallie+Wells+Middle+School/@39.2324783,-77.2421042,17z/data=!3m1!4b1!4m5!3m4!1s0x89b62b0735840c73:0xdef71f9339502584!8m2!3d39.2324742!4d-77.2399155" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-
     </section>
-    <div class="contact_1">
-        EMAIL
-        <img src="https://pbs.twimg.com/media/Egv5n8mX0AIPOED?format=jpg&name=large" id="principal"> <a href="mailto:someone@example.com?Subject=Hello"> <i class="fa fa-envelope"></i>&nbsp;&nbsp;<h3>mygmailid@gmail.com</h3> Twitter:@HallieWellsMS </a>
+
     </div>
 
 
+    <script async src="https://drv.tw/inc/wd.js"></script>
 </body>
 
 </html>
+
